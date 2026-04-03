@@ -1,12 +1,327 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
-<body>
-    <h1>Hello, World!</h1>
-    <img src="img/windows.jpg" alt="windows">
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figma Land</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="#" class="header__logo">
+          <img src="img/icons/logo.png" alt="Figma Land logo" />
+        </a>
+        <button class="header__burger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="header__menu-nav">
+          <ul class="header__menu-list">
+            <li><a href="#" class="header__menu-link">Home</a></li>
+            <li><a href="#" class="header__menu-link">Product</a></li>
+            <li><a href="#" class="header__menu-link">Pricing</a></li>
+            <li><a href="#" class="header__menu-link">About</a></li>
+            <li><a href="#" class="header__menu-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a
+              href="https://twitter.com"
+              class="social-list__link"
+              target="_blank"
+              aria-label="Twitter"
+            >
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a
+              href="https://facebook.com"
+              class="social-list__link"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a
+              href="https://linkedin.com"
+              class="social-list__link"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">The best products start with Figma</h1>
+          <p class="hero__description">
+            Most calendars are designed for teams. Slate is designed for
+            freelancers
+          </p>
+          <button class="btn btn--hero">Try For Free</button>
+        </div>
+      </section>
+      <section class="features">
+        <div class="container">
+          <div class="features__header">
+            <h2 class="features__title">Features</h2>
+            <p class="features__text">
+              Most calendars are designed for teams. Slate is designed for
+              freelancers
+            </p>
+          </div>
+          <div class="features__video-wrapper">
+            <div class="features__video-poster">
+              <img
+                src="img/features/video-poster.jpg"
+                alt="Video preview"
+                class="features__video-img"
+              />
+              <button class="features__video-play" aria-label="Play video">
+                <i class="fa-solid fa-play"></i>
+              </button>
+            </div>
+          </div>
+          <div class="features__grid">
+            <article class="feature-item">
+              <div class="feature-item__icon">
+                <img
+                  src="img/features/drawing.svg"
+                  alt="Drawing illustration"
+                />
+              </div>
+              <h3 class="feature-item__title">
+                OpenType features Variable fonts
+              </h3>
+              <p class="feature-item__text">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal.
+              </p>
+            </article>
+            <article class="feature-item">
+              <div class="feature-item__icon">
+                <img
+                  src="img/features/brush.svg"
+                  alt="Drawing illustration"
+                />
+              </div>
+              <h3 class="feature-item__title">Design with real data</h3>
+              <p class="feature-item__text">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal.
+              </p>
+            </article>
+            <article class="feature-item">
+              <div class="feature-item__icon">
+                <img
+                  src="img/features/pencil.svg"
+                  alt="Drawing illustration"
+                />
+              </div>
+              <h3 class="feature-item__title">Fastest way to take action</h3>
+              <p class="feature-item__text">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="organize">
+        <div class="container organize__container">
+          <div class="organize__content">
+            <h2 class="organize__title">Fastest way to organize</h2>
+            <p class="organize__description">
+              Most calendars are designed for teams. Slate is designed for
+              freelancers
+            </p>
+            <button class="btn btn--hero">Try For Free</button>
+          </div>
+          <div class="organize__image">
+            <img
+              src="img/organize/Macbook_Pro.png"
+              alt="Macbook_Pro_organize"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="newsletter">
+        <div class="container newsletter__container">
+          <div class="newsletter__content">
+            <h3 class="newsletter__subtitle">At your fingertips</h3>
+            <h2 class="newsletter__title">Newsletter</h2>
+            <p class="newsletter__text">
+              Most calendars are designed for teams. Slate is designed for
+              freelancers
+            </p>
+          </div>
+
+          <div class="newsletter__image">
+            <img
+              src="img/newsletter/undraw_newsletter_vovu.svg"
+              alt="newsletter"
+              class="newsletter__img"
+            />
+          </div>
+
+          <div class="newsletter__subscribe">
+            <h4 class="newsletter__subscribe-title">
+              Subscribe to our Newsletter
+            </h4>
+            <p class="newsletter__subscribe-text">
+              Available exclusively on Figmaland
+            </p>
+
+            <form class="newsletter__form">
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="newsletter__input"
+              />
+              <button type="submit" class="btn btn--primary newsletter__btn">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="partners">
+        <div class="container">
+          <h2 class="partners__title">Partners</h2>
+          <p class="partners__description">
+            Most calendars are designed for teams. Slate is designed for
+            freelancers
+          </p>
+          <ul class="partners__grid">
+            <li class="partners__item">
+              <span class="partners__client-name">Client Name</span>
+
+              <img
+                src="img/partners/google.png "
+                alt="Google"
+                class="partners__img"
+              />
+            </li>
+
+            <li class="partners__item">
+              <span class="partners__client-name">Client Name</span>
+
+              <img
+                src="img/partners/amazon.png"
+                alt="Amazon"
+                class="partners__img"
+              />
+            </li>
+            <li class="partners__item">
+              <span class="partners__client-name">Client Name</span>
+
+              <img
+                src="img/partners/microsoft.png"
+                alt="Microsoft"
+                class="partners__img"
+              />
+            </li>
+            <li class="partners__item">
+              <span class="partners__client-name">Client Name</span>
+
+              <img
+                src="img/partners/uber.png"
+                alt="Uber"
+                class="partners__img"
+              />
+            </li>
+            <li class="partners__item">
+              <span class="partners__client-name">Client Name</span>
+
+              <img
+                src="img/partners/dropbox.png"
+                alt="Dropbox"
+                class="partners__img"
+              />
+            </li>
+            <li class="partners__item">
+              <span class="partners__client-name">Client Name</span>
+
+              <img
+                src="img/partners/amazon.png"
+                alt="Amazon"
+                class="partners__img"
+              />
+            </li>
+            <li class="partners__item">
+              <span class="partners__client-name">Client Name</span>
+
+              <img
+                src="img/partners/google.png "
+                alt="Google"
+                class="partners__img"
+              />
+            </li>
+            <li class="partners__item">
+              <span class="partners__client-name">Client Name</span>
+
+              <img
+                src="img/partners/uber.png"
+                alt="Uber"
+                class="partners__img"
+              />
+            </li>
+            <li class="partners__item">
+              <span class="partners__client-name">Client Name</span>
+              <img
+                src="img/partners/amazon.png"
+                alt="Amazon"
+                class="partners__img"
+              />
+            </li>
+          </ul>
+          <div class="partners__btn">
+            <button class="btn btn--hero">Try For Free</button>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials">
+        <div class="testimonials__container">
+          <blockquote class="testimonials__quote">
+            <p class="testimonials__text">
+              “Organize across teams effortlessly and improve collaboration.”
+            </p>
+            <footer class="testimonials__author">
+              <picture class="testimonials__avatar-wrapper">
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/testimonials/Ellipse.png"
+                />
+                <img
+                  class="testimonials__avatar"
+                  src="img/testimonials/Ellips-girl.png"
+                  alt="UI designer avatar"
+                />
+              </picture>
+
+              <div class="testimonials__info">
+                <span class="testimonials__role">UI designer</span>
+              </div>
+            </footer>
+          </blockquote>
+          <button class="btn btn--testimonial">More Testimonials</button>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
